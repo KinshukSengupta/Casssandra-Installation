@@ -1,0 +1,19 @@
+State and Run Cassandra-cli After Successfull Configuration
+
+
+If installation is done perfectly then start cassandra and check the status. Using below commands.
+
+1. sudo cassandra -f
+2. cassandra-cli
+It will show like below for successfull install.
+
+kinshuk@hadoopslave55:/bin$ cqlsh 192.168.1.55
+Connected to Test Cluster at 192.168.1.55:9160.
+[cqlsh 2.2.0 | Cassandra 1.1.12 | CQL spec 2.0.0 | Thrift protocol 19.33.0]
+Use HELP for help.
+cqlsh> 
+
+
+
+
+3. For unsucessfull installation it says connection refused or error connecting to 127.0.0.1/9160
