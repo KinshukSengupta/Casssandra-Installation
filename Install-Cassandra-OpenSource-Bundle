@@ -1,0 +1,31 @@
+Cassandra Installation.
+
+1. sudo apt-get update
+2. sudo gedit /etc/apt/sources.list
+3. Add below deb links to source.list file
+		deb http://www.apache.org/dist/cassandra/debian 10x main  
+		deb-src http://www.apache.org/dist/cassandra/debian 10x main  
+
+4. run below command:
+gpg --keyserver wwwkeys.pgp.net --recv-keys 4BD736A82B5C1B00  
+	   sudo apt-key add ~/.gnupg/pubring.gpg  
+	   sudo apt-get update 
+      5. Now install sudo apt-get install cassandra
+      6. download MX4J from (http://sourceforge.net/projects/mx4j/files/MX4J%20Binary/3.0.2/mx4j-3.0.2.zip/download ) 
+     7. Add it to /usr/share/cassandra/lib 
+      8. Run sudo cassandra
+TO Start /Stop Service Run Below command:
+	sudo /etc/init.d/cassandra start
+Cassandra Directory Structue:
+
+      Installation will create following directories. Uses of them are mentioned within the brackets.
+/var/lib/cassandra (data directories)
+/var/log/cassandra (log directory)
+/var/run/cassandra (runtime files)
+/usr/share/cassandra (environment settings)
+/usr/share/cassandra/lib (JAR files)
+/usr/bin (binary files)
+/usr/sbin
+/etc/cassandra (configuration files)
+/etc/init.d (service startup script)
+/etc/security/limits.d (cassandra user limits)
